@@ -89,7 +89,7 @@ margin-top: .5em;
 .stats{
     display: flex;
     justify-content: space-around;
-    margin-bottom: 30px;
+    margin: 0 20px 30px;
 }
 
 .info{
@@ -97,17 +97,17 @@ margin-top: .5em;
 }
 
 .top{
-    position: absolute;
+    position: fixed;
     z-index: -1;
-    top: -90%;
-    right: 50%;
+    right: 40%;
+    top: -82%;
 }
 
 .bottom{
     position: fixed;
     z-index: -1;
-    top:50%;
     left: 50%;
+    top: 45%;
 }
 
 @media( min-width:475px){
@@ -115,9 +115,16 @@ margin-top: .5em;
         width: 350px;
     }
     .top{
-        position: absolute;
+        position: fixed;
         z-index: -1;
-        top: -46.5%;
-        right: 50%;
+        left: 0%;
+        top: -50%;
     }
+    .bottom{
+        position: fixed;
+        z-index: -1;
+        right: -1%;
+        bottom: -52%;
+    }
+    
 }
